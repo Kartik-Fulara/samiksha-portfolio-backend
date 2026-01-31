@@ -6,14 +6,6 @@
   },
   "options": {},
   "attributes": {
-    "heading": {
-      "type": "string",
-      "required": true
-    },
-    "description": {
-      "type": "text",
-      "required": true
-    },
     "ctaText": {
       "type": "string"
     },
@@ -24,7 +16,13 @@
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "description": {
+      "type": "blocks",
+      "required": true
     }
   }
 }

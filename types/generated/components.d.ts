@@ -267,8 +267,7 @@ export interface SectionsHeroImageContents extends Struct.ComponentSchema {
   attributes: {
     ctaLink: Schema.Attribute.String;
     ctaText: Schema.Attribute.String;
-    description: Schema.Attribute.Text & Schema.Attribute.Required;
-    heading: Schema.Attribute.String & Schema.Attribute.Required;
+    description: Schema.Attribute.Blocks & Schema.Attribute.Required;
     image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
   };
 }

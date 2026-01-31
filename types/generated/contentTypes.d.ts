@@ -532,6 +532,9 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'sections.about-canvas',
         'sections.design-journey',
         'sections.tools-used',
+        'sections.hero-image-contents',
+        'sections.case-study-card',
+        'sections.about-hero',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;

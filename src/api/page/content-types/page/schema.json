@@ -49,7 +49,10 @@
         "sections.beyond-canvas",
         "sections.about-canvas",
         "sections.design-journey",
-        "sections.tools-used"
+        "sections.tools-used",
+        "sections.hero-image-contents",
+        "sections.case-study-card",
+        "sections.about-hero"
       ]
     },
     "published": {
