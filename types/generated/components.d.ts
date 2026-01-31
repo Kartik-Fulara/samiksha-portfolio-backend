@@ -111,6 +111,30 @@ export interface SectionsButton extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsCaseStudyCard extends Struct.ComponentSchema {
+  collectionName: 'components_sections_case_studies_cards';
+  info: {
+    description: 'Animated case study card with image, description, and links';
+    displayName: 'Case Studies Card';
+    icon: 'folder';
+  };
+  attributes: {
+    caseStudyLink: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'#'>;
+    description: Schema.Attribute.Text &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'I created Sugarpop to explore how playful visuals and vibrant colors can enhance user engagement without overwhelming usability.'>;
+    image: Schema.Attribute.Media<'images'>;
+    prototypeLink: Schema.Attribute.String & Schema.Attribute.DefaultTo<'#'>;
+    prototypeTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Prototype'>;
+    title: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'Sugarpop'>;
+  };
+}
+
 export interface SectionsColorPalette extends Struct.ComponentSchema {
   collectionName: 'components_sections_color_palettes';
   info: {
@@ -165,7 +189,7 @@ export interface SectionsDesignJourney extends Struct.ComponentSchema {
   attributes: {
     companyName: Schema.Attribute.String & Schema.Attribute.Required;
     companyUrl: Schema.Attribute.String;
-    description: Schema.Attribute.RichText & Schema.Attribute.Required;
+    description: Schema.Attribute.Blocks;
     duration: Schema.Attribute.String & Schema.Attribute.Required;
     jobTitle: Schema.Attribute.String & Schema.Attribute.Required;
     sectionTitle: Schema.Attribute.String &
@@ -231,6 +255,21 @@ export interface SectionsFrame extends Struct.ComponentSchema {
     showBorder: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
     title: Schema.Attribute.String;
     titleColor: Schema.Attribute.String & Schema.Attribute.DefaultTo<'#8B5CF6'>;
+  };
+}
+
+export interface SectionsHeroImageContents extends Struct.ComponentSchema {
+  collectionName: 'components_sections_hero_image_contents';
+  info: {
+    description: 'Hero section with image on one side and content on the other';
+    displayName: 'Hero Image + Content';
+  };
+  attributes: {
+    ctaLink: Schema.Attribute.String;
+    ctaText: Schema.Attribute.String;
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    heading: Schema.Attribute.String & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
   };
 }
 
@@ -396,6 +435,19 @@ export interface SectionsTypography extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedNavItems extends Struct.ComponentSchema {
+  collectionName: 'components_shared_nav_items';
+  info: {
+    description: 'Single navigation link';
+    displayName: 'Nav Item';
+  };
+  attributes: {
+    external: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    href: Schema.Attribute.String & Schema.Attribute.Required;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedSeo extends Struct.ComponentSchema {
   collectionName: 'components_shared_seos';
   info: {
@@ -450,6 +502,7 @@ declare module '@strapi/strapi' {
       'sections.about-hero': SectionsAboutHero;
       'sections.beyond-canvas': SectionsBeyondCanvas;
       'sections.button': SectionsButton;
+      'sections.case-study-card': SectionsCaseStudyCard;
       'sections.color-palette': SectionsColorPalette;
       'sections.container': SectionsContainer;
       'sections.custom-html': SectionsCustomHtml;
@@ -457,6 +510,7 @@ declare module '@strapi/strapi' {
       'sections.flow-diagram': SectionsFlowDiagram;
       'sections.font-preview': SectionsFontPreview;
       'sections.frame': SectionsFrame;
+      'sections.hero-image-contents': SectionsHeroImageContents;
       'sections.image-component': SectionsImageComponent;
       'sections.image-grid': SectionsImageGrid;
       'sections.persona-card': SectionsPersonaCard;
@@ -466,6 +520,7 @@ declare module '@strapi/strapi' {
       'sections.steps-layout': SectionsStepsLayout;
       'sections.tools-used': SectionsToolsUsed;
       'sections.typography': SectionsTypography;
+      'shared.nav-items': SharedNavItems;
       'shared.seo': SharedSeo;
       'ui.badge': UiBadge;
     }

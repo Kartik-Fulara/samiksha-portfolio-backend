@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_sections_case_studies_cards",
+  "info": {
+    "displayName": "Case Studies Card",
+    "icon": "folder",
+    "description": "Animated case study card with image, description, and links"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Sugarpop"
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "default": "I created Sugarpop to explore how playful visuals and vibrant colors can enhance user engagement without overwhelming usability."
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "caseStudyLink": {
+      "type": "string",
+      "required": true,
+      "default": "#"
+    },
+    "prototypeTitle": {
+      "type": "string",
+      "default": "Prototype"
+    },
+    "prototypeLink": {
+      "type": "string",
+      "default": "#"
+    }
+  }
+}

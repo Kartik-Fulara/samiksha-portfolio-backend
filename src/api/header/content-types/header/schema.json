@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "headers",
+  "info": {
+    "singularName": "header",
+    "pluralName": "headers",
+    "displayName": "header"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "brandType": {
+      "type": "enumeration",
+      "enum": [
+        "text",
+        "logo"
+      ]
+    },
+    "brandText": {
+      "type": "string"
+    },
+    "brandLogo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "navigations": {
+      "type": "component",
+      "component": "shared.nav-items",
+      "repeatable": true
+    }
+  }
+}

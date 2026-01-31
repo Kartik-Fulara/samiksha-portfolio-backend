@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_sections_hero_image_contents",
+  "info": {
+    "displayName": "Hero Image + Content",
+    "description": "Hero section with image on one side and content on the other"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    }
+  }
+}

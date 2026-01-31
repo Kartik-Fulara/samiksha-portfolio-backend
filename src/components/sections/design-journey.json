@@ -30,14 +30,13 @@
       "type": "string",
       "required": true
     },
-    "description": {
-      "type": "richtext",
-      "required": true
-    },
     "toolsSections": {
       "type": "component",
-      "repeatable": true,
-      "component": "sections.tools-used"
+      "component": "sections.tools-used",
+      "repeatable": true
+    },
+    "description": {
+      "type": "blocks"
     }
   }
 }
