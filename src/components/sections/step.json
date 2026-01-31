@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_sections_steps",
+  "info": {
+    "displayName": "Step",
+    "description": "A step in the project workflow"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "order": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "titleClassName": {
+      "type": "string"
+    },
+    "contentClassName": {
+      "type": "string"
+    },
+    "connectToPrevious": {
+      "type": "boolean",
+      "default": true,
+      "description": "Show connecting line to previous section"
+    },
+    "components": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.font-preview",
+        "sections.color-palette",
+        "sections.flow-diagram",
+        "sections.persona-card",
+        "sections.rich-content",
+        "sections.image-component",
+        "sections.frame",
+        "sections.button",
+        "sections.typography",
+        "sections.image-grid",
+        "sections.custom-html",
+        "sections.container"
+      ]
+    }
+  }
+}

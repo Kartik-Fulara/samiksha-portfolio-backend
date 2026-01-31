@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_font_previews",
+  "info": {
+    "displayName": "Font Preview"
+  },
+  "options": {},
+  "attributes": {
+    "fontFamilyClass": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "font": {
+      "type": "string"
+    },
+    "samples": {
+      "type": "json",
+      "required": true
+    },
+    "previewText": {
+      "type": "string"
+    },
+    "previewClassName": {
+      "type": "string"
+    }
+  }
+}

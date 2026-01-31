@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_typographies",
+  "info": {
+    "displayName": "Typography"
+  },
+  "options": {},
+  "attributes": {
+    "variant": {
+      "type": "enumeration",
+      "enum": ["h1", "h2", "h3", "h4", "p", "link"],
+      "default": "p"
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "className": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}

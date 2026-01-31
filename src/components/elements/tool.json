@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_elements_tools",
+  "info": {
+    "displayName": "Tool",
+    "icon": "cube",
+    "description": "Individual tool with icon and styling options"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "rounded": {
+      "type": "enumeration",
+      "enum": ["none", "sm", "md", "lg", "xl", "2xl", "full"],
+      "default": "xl"
+    },
+    "shadow": {
+      "type": "enumeration",
+      "enum": ["none", "sm", "md", "lg", "xl", "2xl"],
+      "default": "md"
+    },
+    "hoverEffect": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

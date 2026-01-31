@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_project_infos",
+  "info": {
+    "displayName": "Project Info",
+    "description": "Hero section with image and description overlay"
+  },
+  "options": {},
+  "attributes": {
+    "imageSrc": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "imageAlt": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "blocks",
+      "required": true
+    },
+    "className": {
+      "type": "string"
+    }
+  }
+}

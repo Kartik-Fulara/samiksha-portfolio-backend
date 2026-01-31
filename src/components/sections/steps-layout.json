@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_sections_steps_layouts",
+  "info": {
+    "displayName": "Steps Layout",
+    "description": "Container for step-by-step content with visual connectors"
+  },
+  "options": {},
+  "attributes": {
+    "steps": {
+      "type": "component",
+      "component": "sections.step",
+      "repeatable": true,
+      "required": true
+    },
+    "stepColor": {
+      "type": "string",
+      "default": "bg-[#007AFF]"
+    },
+    "lineColor": {
+      "type": "string",
+      "default": "bg-[#007AFF]/30"
+    },
+    "className": {
+      "type": "string"
+    },
+    "hero": {
+      "type": "component",
+      "component": "sections.project-info",
+      "repeatable": false
+    },
+    "connectHero": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  }
+}

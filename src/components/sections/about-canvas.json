@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_about_canvas",
+  "info": {
+    "displayName": "About Canvas",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "Content": {
+      "type": "blocks"
+    },
+    "leftImage": {
+      "type": "component",
+      "component": "sections.image-component",
+      "repeatable": false
+    },
+    "RightImage": {
+      "type": "component",
+      "component": "sections.image-component",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

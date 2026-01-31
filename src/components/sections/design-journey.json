@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_sections_design_journey",
+  "info": {
+    "displayName": "Design Journey Section",
+    "icon": "briefcase",
+    "description": "Job experience section with tools used"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string",
+      "default": "My Design Journey"
+    },
+    "sectionTitleColor": {
+      "type": "string",
+      "default": "#095BBC"
+    },
+    "jobTitle": {
+      "type": "string",
+      "required": true
+    },
+    "companyName": {
+      "type": "string",
+      "required": true
+    },
+    "companyUrl": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "toolsSections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.tools-used"
+    }
+  }
+}

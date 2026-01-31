@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "templates",
+  "info": {
+    "singularName": "template",
+    "pluralName": "templates",
+    "displayName": "Template",
+    "description": "Reusable page templates"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "identifier": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "preview": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "layoutType": {
+      "type": "enumeration",
+      "enum": ["project", "about", "custom"],
+      "required": true,
+      "default": "custom"
+    },
+    "config": {
+      "type": "json",
+      "description": "Template-specific configuration"
+    }
+  }
+}

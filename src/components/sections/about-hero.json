@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_about_heroes",
+  "info": {
+    "displayName": "AboutHero",
+    "icon": "eye"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "HeroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

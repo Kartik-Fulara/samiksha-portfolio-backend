@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_sections_image_components",
+  "info": {
+    "displayName": "Image Component"
+  },
+  "options": {},
+  "attributes": {
+    "src": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "alt": {
+      "type": "string"
+    },
+    "bottomLabel": {
+      "type": "string"
+    },
+    "aspectRatio": {
+      "type": "string",
+      "default": "aspect-[9/10]"
+    },
+    "hoverEffect": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

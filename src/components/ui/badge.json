@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_ui_badges",
+  "info": {
+    "displayName": "Badge",
+    "description": "Reusable badge component with variants"
+  },
+  "options": {
+    "timestamps": false
+  },
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": ["default", "secondary", "destructive", "outline"],
+      "default": "default"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files"]
+    },
+    "asChild": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_flow_diagrams",
+  "info": {
+    "displayName": "Flow Diagram"
+  },
+  "options": {},
+  "attributes": {
+    "flows": {
+      "type": "json",
+      "required": true
+    }
+  }
+}

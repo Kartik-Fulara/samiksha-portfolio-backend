@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_containers",
+  "info": {
+    "displayName": "Container"
+  },
+  "options": {},
+  "attributes": {
+    "layout": {
+      "type": "enumeration",
+      "enum": ["flex-row", "flex-col", "grid-2", "grid-3", "grid-4"],
+      "default": "flex-col"
+    },
+    "className": {
+      "type": "string"
+    },
+    "components": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.image-component",
+        "sections.rich-content",
+        "sections.typography",
+        "sections.button"
+      ]
+    }
+  }
+}

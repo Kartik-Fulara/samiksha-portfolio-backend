@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_custom_htmls",
+  "info": {
+    "displayName": "Custom HTML"
+  },
+  "options": {},
+  "attributes": {
+    "html": {
+      "type": "text",
+      "required": true
+    },
+    "className": {
+      "type": "string"
+    }
+  }
+}

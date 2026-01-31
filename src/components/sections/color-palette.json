@@ -1,0 +1,17 @@
+
+{
+  "collectionName": "components_sections_color_palettes",
+  "info": {
+    "displayName": "Color Palette"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "colors": {
+      "type": "json",
+      "required": true
+    }
+  }
+}

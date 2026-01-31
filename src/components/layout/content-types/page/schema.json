@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page",
+    "description": "Dynamic pages with templates"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "pathname": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "template": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::template.template"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.step",
+        "sections.rich-content",
+        "sections.image-component",
+        "sections.image-grid",
+        "sections.container",
+        "sections.typography",
+        "sections.button",
+        "sections.frame",
+        "sections.color-palette",
+        "sections.font-preview",
+        "sections.persona-card",
+        "sections.flow-diagram",
+        "sections.custom-html"
+      ]
+    },
+    "published": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

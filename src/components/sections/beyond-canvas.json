@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_sections_beyond_canvas",
+  "info": {
+    "displayName": "Beyond Canvas Section",
+    "icon": "brush",
+    "description": "Animated header section with wavy borders"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Beyond The Canvas",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "default": "When I'm Not Designing"
+    },
+    "titleColor": {
+      "type": "string",
+      "default": "#111827",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+    },
+    "subtitleColor": {
+      "type": "string",
+      "default": "#2563eb",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+    },
+    "lineColor": {
+      "type": "string",
+      "default": "#3b82f6",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+    },
+    "waveAmplitude": {
+      "type": "integer",
+      "default": 50,
+      "min": 10,
+      "max": 100
+    },
+    "waveFrequency": {
+      "type": "decimal",
+      "default": 0.025,
+      "min": 0.001,
+      "max": 0.1
+    },
+    "gap": {
+      "type": "integer",
+      "default": 40,
+      "min": 10,
+      "max": 100
+    }
+  }
+}

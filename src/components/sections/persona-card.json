@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_persona_cards",
+  "info": {
+    "displayName": "Persona Card"
+  },
+  "options": {},
+  "attributes": {
+    "personas": {
+      "type": "json",
+      "required": true
+    }
+  }
+}

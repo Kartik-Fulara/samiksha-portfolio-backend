@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_sections_tools_used",
+  "info": {
+    "displayName": "Tools Used Section",
+    "icon": "puzzle-piece",
+    "description": "Display tools/technologies used with icons"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "tools": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.tool",
+      "required": true
+    },
+    "showLine": {
+      "type": "boolean",
+      "default": true
+    },
+    "lineColor": {
+      "type": "string"
+    },
+    "lineGradientFrom": {
+      "type": "string",
+      "default": "#3b82f6"
+    },
+    "lineGradientTo": {
+      "type": "string",
+      "default": "#a855f7"
+    }
+  }
+}
