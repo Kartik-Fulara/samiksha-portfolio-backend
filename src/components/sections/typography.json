@@ -7,12 +7,25 @@
   "attributes": {
     "variant": {
       "type": "enumeration",
-      "enum": ["h1", "h2", "h3", "h4", "p", "link"],
-      "default": "p"
+      "enum": ["h1", "h2", "h3", "body", "bodyLarge", "small", "link", "span"],
+      "default": "body"
     },
     "text": {
       "type": "text",
       "required": true
+    },
+    "fontKey": {
+      "type": "enumeration",
+      "enum": [
+        "arial",
+        "inter",
+        "poppins",
+        "sfpro",
+        "geist",
+        "maiky",
+        "amita"
+      ],
+      "default": "arial"
     },
     "className": {
       "type": "string"

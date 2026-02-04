@@ -5,8 +5,18 @@
   },
   "options": {},
   "attributes": {
-    "fontFamilyClass": {
-      "type": "string",
+    "fontKey": {
+      "type": "enumeration",
+      "enum": [
+        "arial",
+        "inter",
+        "poppins",
+        "sfpro",
+        "geist",
+        "maiky",
+        "amita"
+      ],
+      "default": "arial",
       "required": true
     },
     "title": {
