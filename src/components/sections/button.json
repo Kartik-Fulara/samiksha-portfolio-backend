@@ -14,6 +14,31 @@
       "enum": ["default", "outline", "ghost"],
       "default": "default"
     },
+    "fontKey": {
+      "type": "enumeration",
+      "enum": [
+        "arial",
+        "inter",
+        "poppins",
+        "sfpro",
+        "geist",
+        "maiky",
+        "amita"
+      ],
+      "default": "arial"
+    },
+    "fontSize": {
+      "type": "string",
+      "description": "CSS font-size value (e.g. 14px, 1rem)"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "description": "Button background color (hex, rgb, etc.)"
+    },
+    "textColor": {
+      "type": "string",
+      "description": "Button text color"
+    },
     "href": {
       "type": "string"
     },
