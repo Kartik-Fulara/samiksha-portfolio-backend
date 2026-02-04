@@ -103,9 +103,18 @@ export interface SectionsButton extends Struct.ComponentSchema {
     displayName: 'Button';
   };
   attributes: {
+    backgroundColor: Schema.Attribute.String &
+      Schema.Attribute.CustomField<'plugin::color-picker.color'>;
     className: Schema.Attribute.String;
+    fontKey: Schema.Attribute.Enumeration<
+      ['arial', 'inter', 'poppins', 'sfpro', 'geist', 'maiky', 'amita']
+    > &
+      Schema.Attribute.DefaultTo<'arial'>;
+    fontSize: Schema.Attribute.String;
     href: Schema.Attribute.String;
     text: Schema.Attribute.String & Schema.Attribute.Required;
+    textColor: Schema.Attribute.String &
+      Schema.Attribute.CustomField<'plugin::color-picker.color'>;
     variant: Schema.Attribute.Enumeration<['default', 'outline', 'ghost']> &
       Schema.Attribute.DefaultTo<'default'>;
   };
@@ -217,7 +226,11 @@ export interface SectionsFontPreview extends Struct.ComponentSchema {
   };
   attributes: {
     font: Schema.Attribute.String;
-    fontFamilyClass: Schema.Attribute.String & Schema.Attribute.Required;
+    fontKey: Schema.Attribute.Enumeration<
+      ['arial', 'inter', 'poppins', 'sfpro', 'geist', 'maiky', 'amita']
+    > &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'arial'>;
     previewClassName: Schema.Attribute.String;
     previewText: Schema.Attribute.String;
     samples: Schema.Attribute.JSON & Schema.Attribute.Required;
@@ -425,12 +438,16 @@ export interface SectionsTypography extends Struct.ComponentSchema {
   };
   attributes: {
     className: Schema.Attribute.String;
+    fontKey: Schema.Attribute.Enumeration<
+      ['arial', 'inter', 'poppins', 'sfpro', 'geist', 'maiky', 'amita']
+    > &
+      Schema.Attribute.DefaultTo<'arial'>;
     href: Schema.Attribute.String;
     text: Schema.Attribute.Text & Schema.Attribute.Required;
     variant: Schema.Attribute.Enumeration<
-      ['h1', 'h2', 'h3', 'h4', 'p', 'link']
+      ['h1', 'h2', 'h3', 'body', 'bodyLarge', 'small', 'link', 'span']
     > &
-      Schema.Attribute.DefaultTo<'p'>;
+      Schema.Attribute.DefaultTo<'body'>;
   };
 }
 

@@ -11,11 +11,16 @@
     },
     "variant": {
       "type": "enumeration",
-      "enum": ["default", "outline", "ghost"],
-      "default": "default"
+      "default": "default",
+      "enum": [
+        "default",
+        "outline",
+        "ghost"
+      ]
     },
     "fontKey": {
       "type": "enumeration",
+      "default": "arial",
       "enum": [
         "arial",
         "inter",
@@ -24,26 +29,26 @@
         "geist",
         "maiky",
         "amita"
-      ],
-      "default": "arial"
+      ]
     },
     "fontSize": {
-      "type": "string",
-      "description": "CSS font-size value (e.g. 14px, 1rem)"
-    },
-    "backgroundColor": {
-      "type": "string",
-      "description": "Button background color (hex, rgb, etc.)"
-    },
-    "textColor": {
-      "type": "string",
-      "description": "Button text color"
+      "type": "string"
     },
     "href": {
       "type": "string"
     },
     "className": {
       "type": "string"
+    },
+    "textColor": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+    },
+    "backgroundColor": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
     }
   }
 }
