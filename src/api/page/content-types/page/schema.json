@@ -52,7 +52,8 @@
         "sections.tools-used",
         "sections.hero-image-contents",
         "sections.case-study-card",
-        "sections.about-hero"
+        "sections.about-hero",
+        "sections.quick-nav"
       ]
     },
     "published": {

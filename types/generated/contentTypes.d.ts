@@ -535,6 +535,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'sections.hero-image-contents',
         'sections.case-study-card',
         'sections.about-hero',
+        'sections.quick-nav',
       ]
     >;
     createdAt: Schema.Attribute.DateTime;
