@@ -345,6 +345,23 @@ export interface SectionsProjectInfo extends Struct.ComponentSchema {
   };
 }
 
+export interface SectionsQuickNav extends Struct.ComponentSchema {
+  collectionName: 'components_sections_quick_navs';
+  info: {
+    displayName: 'QuickNav';
+    icon: 'car';
+  };
+  attributes: {
+    homeLink: Schema.Attribute.String;
+    homeTitle: Schema.Attribute.String;
+    isPrev: Schema.Attribute.Boolean;
+    nextLink: Schema.Attribute.String;
+    nextTitle: Schema.Attribute.String;
+    prevLink: Schema.Attribute.String;
+    prevTitle: Schema.Attribute.String;
+  };
+}
+
 export interface SectionsRichContent extends Struct.ComponentSchema {
   collectionName: 'components_sections_rich_contents';
   info: {
@@ -531,6 +548,7 @@ declare module '@strapi/strapi' {
       'sections.image-grid': SectionsImageGrid;
       'sections.persona-card': SectionsPersonaCard;
       'sections.project-info': SectionsProjectInfo;
+      'sections.quick-nav': SectionsQuickNav;
       'sections.rich-content': SectionsRichContent;
       'sections.step': SectionsStep;
       'sections.steps-layout': SectionsStepsLayout;

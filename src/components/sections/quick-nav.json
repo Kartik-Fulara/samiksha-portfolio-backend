@@ -1,0 +1,52 @@
+{
+  "collectionName": "components_sections_quick_navs",
+  "info": {
+    "displayName": "QuickNav",
+    "icon": "car"
+  },
+  "options": {},
+  "attributes": {
+    "homeTitle": {
+      "type": "string"
+    },
+    "homeLink": {
+      "type": "string"
+    },
+    "isPrev": {
+      "type": "boolean"
+    },
+    "nextTitle": {
+      "type": "string"
+    },
+    "nextLink": {
+      "type": "string"
+    },
+    "prevTitle": {
+      "type": "string",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "isPrev"
+            },
+            true
+          ]
+        }
+      }
+    },
+    "prevLink": {
+      "type": "string",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "isPrev"
+            },
+            true
+          ]
+        }
+      }
+    }
+  },
+  "config": {}
+}
