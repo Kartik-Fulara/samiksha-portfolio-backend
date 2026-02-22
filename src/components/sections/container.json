@@ -13,6 +13,9 @@
     "className": {
       "type": "string"
     },
+    "id": {
+      "type": "string"
+    },
     "components": {
       "type": "dynamiczone",
       "components": [
