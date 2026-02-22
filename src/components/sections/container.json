@@ -13,7 +13,7 @@
     "className": {
       "type": "string"
     },
-    "id": {
+    "containerId": {
       "type": "string"
     },
     "components": {
